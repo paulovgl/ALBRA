@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "185512390321",
+    "project_id": "albra-47329",
+    "storage_bucket": "albra-47329.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185512390321:android:9f3610f436de2cd8427c90",
+        "android_client_info": {
+          "package_name": "br.com.albra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185512390321-4perckvi0kenmibaasvjqtememl1nkdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa9buRyEhPHFBT9IphnKDLvSk4evUzxzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185512390321-4perckvi0kenmibaasvjqtememl1nkdd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

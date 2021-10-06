@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_ALBRA"
+        android:text="@string/app_name"
+        android:textColor="@color/blackcurrant"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        style="@style/box_login"
+        android:id="@+id/box_login"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/ed_email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@id/box_login"
+        app:layout_constraintEnd_toEndOf="@id/box_login"
+        app:layout_constraintTop_toTopOf="@id/box_login"
+        />
+
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/ed_usuario"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/ed_senha"
+        android:hint="@string/senha"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="@id/box_login"
+        app:layout_constraintEnd_toEndOf="@id/box_login"
+        app:layout_constraintTop_toBottomOf="@id/ed_email"
+        />
+
+    <Button
+        style="@style/button"
+        android:id="@+id/btn_login"
+        android:text="@string/entrar"
+        app:layout_constraintStart_toStartOf="@id/box_login"
+        app:layout_constraintEnd_toEndOf="@id/box_login"
+        app:layout_constraintTop_toBottomOf="@id/ed_senha"
+        app:layout_constraintBottom_toBottomOf="@id/box_login"
+        />
+
+    <ProgressBar
+        android:id="@+id/carregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="@color/crimson"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box_login"
+        />
+
+    <TextView
+        android:id="@+id/txt_cadastrar"
+        android:text="@string/cadastro"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/blackcurrant"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

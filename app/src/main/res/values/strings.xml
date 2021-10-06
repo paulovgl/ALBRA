@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ALBRA</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="cadastro">Cadastre-se Clicando Aqui!</string>
+    <string name="entrar">Entrar</string>
+    <string name="nome">Nome</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="escolha">Escolha o tipo de usuário</string>
+    <string name="leitor">Leitor</string>
+    <string name="autor">Autor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tela_inicial">TelaInicial</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">ALBRA</string>
+    <string name="nav_header_subtitle">Acervo de Livros Brasileiros</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Obras Cadastradas</string>
+    <string name="menu_slideshow">Modo Leitor</string>
+    <string name="inicio">Inicío</string>
+    <string name="obras_cadastradas">Obras Cadastradas</string>
+    <string name="modo_leitor">Modo Leitor</string>
+    <string name="config">Configurações</string>
+    <string name="cadastrar_obra">Cadastrar Obra</string>
+    <string name="descricao_da_obra">Descrição da Obra</string>
+    <string name="link_da_imagem">Link da Imagem</string>
+    <string name="link">Link</string>
+    <string name="nome_da_obra">Nome da Obra</string>
+    <string name="adicionar_obras">Adicionar Obras</string>
+    <string name="obra_cadastrada">Obra Cadastrada</string>
+    <string name="sair">Sair</string>
+    <string name="imagem_da_obra">Imagem da Obra</string>
+    <string name="carregar_link_da_imagem">Clique para carregar o link da imagem</string>
+    <string name="imagem_do_li">Imagem do LI</string>
+    <string name="voltar">Voltar</string>
+    <string name="imagem_obra">Imagem Obra</string>
+    <string name="bem_vindo">Seja Bem Vindo ao ALBRA</string>
+</resources>

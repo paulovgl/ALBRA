@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@color/yellow_orange"
+        >
+
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="100dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="@string/imagem_obra" />
+
+        <TextView
+            android:id="@+id/card_description"
+            android:layout_width="265dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/descricao_da_obra"
+            android:textColor="@color/blackcurrant"
+            android:textAlignment="center"
+            android:maxLines="5"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@+id/card_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_image"
+            app:layout_constraintTop_toTopOf="@+id/card_image" />
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="265dp"
+            android:layout_height="20dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="@string/obras_cadastradas"
+            android:textColor="@color/blackcurrant"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toTopOf="@+id/card_description"
+            app:layout_constraintEnd_toEndOf="@+id/card_description"
+            app:layout_constraintStart_toStartOf="@+id/card_description"
+            app:layout_constraintTop_toTopOf="@+id/card_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

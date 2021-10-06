@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".CadastrarObras">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/yellow_orange"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/blackcurrant"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_voltar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/yellow_orange"
+            android:src="@drawable/ic_back"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/layoutToolBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layoutToolBar"
+            app:tint="@color/blackcurrant"
+            android:contentDescription="@string/voltar" />
+
+    <Button
+        style="@style/button_cadastro"
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:text="@string/carregar_link_da_imagem"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageI"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:contentDescription="@string/imagem_do_li" />
+
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/nomeObra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nome_da_obra"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:autofillHints="Nome da Obra"
+        android:inputType="text" />
+
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/linkObra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/link"
+        app:layout_constraintTop_toBottomOf="@id/nomeObra"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:inputType="textUri"
+        android:autofillHints="Link" />
+
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/linkImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/link_da_imagem"
+        app:layout_constraintTop_toBottomOf="@id/linkObra"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:inputType="textUri"
+        android:autofillHints="Link da Imagem" />
+
+
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="@string/descricao_da_obra"
+        app:layout_constraintTop_toBottomOf="@id/linkImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:autofillHints="Descrição da Obra" />
+
+    <Button
+        style="@style/button"
+        android:id="@+id/btn_cadastrarObra"
+        android:layout_marginBottom="20dp"
+        android:text="@string/cadastrar_obra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

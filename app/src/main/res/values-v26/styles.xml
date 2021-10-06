@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="icon">
+
+        <item name="iconTint">@color/blackcurrant</item>
+        <item name="android:iconTint">@color/blackcurrant</item>
+
+    </style>
+</resources>
